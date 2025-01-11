@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Arial', sans-serif;
+color: #fff;
+background-color: #111;
+line-height: 1.6;
+}
+/* Header */
+header {
+padding: 1rem 2rem;
+background: #000;
+}
+.hero-section{
+    display: flex;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+}
+/* Hero Section */
+.hero {
+  background-color: #222;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 3rem 2rem;
+}
+.hero-text{
+    margin-right: 150px;
+}
+.hero-text h2 {
+font-size: 3rem;
+}
+.hero-text p {
+margin: 1rem 0;
+}
+.hero-img img {
+margin-right: 30px;
+max-width: 250px;
+border-radius: 10%;
+}
+.hire {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+.hire:hover {
+  background-color: rgba(250, 250, 250, 0.808); /* Slight background color on hover */
+  color: #000; /* Change text color on hover */
+}
+/* Resume Section */
+.resume {
+padding: 2rem;
+}
+.resume h2 {
+text-align: center;
+margin-bottom: 1rem;
+}
+.row {
+display: flex;
+justify-content: space-between;
+}
+.column ul {
+list-style: none;
+}
+/* Skills Section */
+.skills {
+padding: 2rem;
+background: #222;
+}
+.skill-bar {
+margin: 1rem 0;
+}
+.skill-bar .label {
+font-weight: bold;
+}
+.skill-bar .progress {
+background: #333;
+height: 10px;
+margin-top: 5px;
+}
+.skill-bar .progress span {
+display: block;
+height: 100%;
+background: #00f;
+}
+/* Footer */
+footer {
+text-align: center;
+background: #000;
+font-size: 0.9rem;
+}
+.background-div { background-image: url('https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-size: cover;
+text-align: center; /* Center-align the text */
+height: 300px; /* Height of the div */
+width: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+@media (max-width: 768px) {
+  .hero-section{flex-direction:column; margin: 2px;} /* Stack items vertically */
+  .hero-text { margin-right: 0; text-align: center; }
+  .hero-img { margin-top: 1rem; text-align: center; }
+  .hero-img img { margin-right: 0; }
+  .row { flex-direction: column; }
+  .column { margin-bottom: 1rem; }
+}
+  
+  @media (max-width: 480px) { .hero-text h2 { font-size: 2rem; } .hero-text p { font-size: 0.9rem; } .hire { font-size: 14px; padding: 8px 16px; } .background-div { height: 200px; }}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1 class="logo">My Portfolio</h1>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<div class="hero-section">
+<div class="hero-text">
+<h2>Hello! I'm Ahmad Waleed</h2>
+<p>
+    A front-end web developer specializes in creating engaging and user-friendly interfaces for websites and web applications. Skilled in HTML, CSS, and JavaScript, they bring designs to life while ensuring responsiveness and cross-browser compatibility. With a keen eye for detail and a passion for intuitive user experiences, front-end developers bridge the gap between design and functionality, delivering visually appealing and seamless digital products. Proficient in frameworks like React or Angular.
+</p>
+<button class="hire">Hire me</button>
+</div>
+<div class="hero-img">
+<img src="pic.jpg" alt="Profile Image">
+</div>
+</div>
+</div>
+</section>
+<section class="resume">
+<div class="container">
+<h2>My Resume</h2>
+<div class="row">
+<div class="column">
+<h3>Experience</h3>
+<ul>
+<li><strong>HiMM Space Inc.</strong> (2023 - Present)</li>
+<li><strong>Robinhood Inc.</strong> (2020 - 2023)</li>
+<li><strong>Bauen Software Inc.</strong> (2016 - 2020)</li>
+</ul>
+</div>
+<div class="column">
+<h3>Education</h3>
+<ul>
+<li><strong>University of Lahore</strong> (2022 - 2025)</li>
+<li><strong>Divisional Public School & College</strong> (2020 - 2021)</li>
+<li><strong>The Educators School</strong> (2018 - 2020)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="skills">
+<div class="container">
+<h2>Skills</h2>
+<p>Practice makes a man perfect.</p>
+<div class="skill-bar">
+<div class="label">Design</div>
+<div class="progress"><span style="width: 90%;"></span></div>
+</div>
+<div class="skill-bar">
+<div class="label">Branding</div>
+<div class="progress"><span style="width: 80%;"></span></div>
+</div>
+<div class="skill-bar">
+<div class="label">Web Design</div>
+<div class="progress"><span style="width: 95%;"></span></div>
+</div>
+<div class="skill-bar">
+<div class="label">Social Media</div>
+<div class="progress"><span style="width: 85%;"></span></div>
+</div>
+</div>
+</section>
+<footer>
+  <div class="background-div">
+    <p><b>Get in touch?</b>
+    <br>Email: Ahmadwaleed@gmail.com
+    </p>
+    <small>Location: Lahore,Punjab - Pakistan</small>
+    </div>
+</footer>
+</body>
+</html>
